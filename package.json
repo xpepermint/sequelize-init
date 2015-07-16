@@ -1,0 +1,30 @@
+{
+  "name": "sequelize-importer",
+  "version": "0.0.1",
+  "description": "Import Sequelize models with ease.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpepermint/sequelize-importer.git"
+  },
+  "keywords": [
+    "sequelize",
+    "import",
+    "importer",
+    "model",
+    "models",
+    "autoload"
+  ],
+  "author": "Xpepermint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpepermint/sequelize-importer/issues"
+  },
+  "homepage": "https://github.com/xpepermint/sequelize-importer#readme",
+  "dependencies": {
+    "sequelize": "^3.4.1"
+  }
+}
