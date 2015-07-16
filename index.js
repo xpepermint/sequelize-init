@@ -5,12 +5,13 @@ var basename = path.basename(module.filename);
 
 module.exports = function(sequelize, dir, options) {
   var db = {};
+  var adir = path.resolve(dir);
 
-  fs.readdirSync(dir).filter(function(file) {
+  fs.readdirSync(adir).filter(function(file) {
     return (file.indexOf('.') !== 0) && (options.exclude||[]).indexOf(file) === -1;
   }).forEach(function(file) {
     if (file.slice(-3) !== '.js') return;
-    var model = sequelize['import'](path.join(dir, file));
+    var model = sequelize['import'](path.join(adir, file));
     db[model.name] = model;
   });
 
