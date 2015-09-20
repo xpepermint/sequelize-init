@@ -8,7 +8,7 @@ Create `index.js` inside your `models` folder.
 
 ```js
 import Sequelize from 'sequelize';
-import init from '/Users/xpeper/Work/xpeper/nodejs/sequelize-init'
+import init from 'sequelize-init'
 
 let sequelize = new Sequelize('database', 'username', 'password');
 let db = init(sequelize, __dirname, {exclude: ['index.js']});
